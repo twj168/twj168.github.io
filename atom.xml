@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>我就是那个基</title>
+  
+  <subtitle>祝你健康</subtitle>
+  <link href="https://twj168.ga/atom.xml" rel="self"/>
+  
+  <link href="https://twj168.ga/"/>
+  <updated>2020-09-21T12:15:42.644Z</updated>
+  <id>https://twj168.ga/</id>
+  
+  <author>
+    <name>那个基</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 Hexo 搭建 GitHub Page 博客(二)--使用 GitHub 分支保存 Hexo 环境和博文</title>
+    <link href="https://twj168.ga/2020/09/21/03/"/>
+    <id>https://twj168.ga/2020/09/21/03/</id>
+    <published>2020-09-21T12:08:35.000Z</published>
+    <updated>2020-09-21T12:15:42.644Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo史上最全搭建教程</title>
+    <link href="https://twj168.ga/2020/09/21/02/"/>
+    <id>https://twj168.ga/2020/09/21/02/</id>
+    <published>2020-09-21T11:59:35.000Z</published>
+    <updated>2020-09-21T12:00:57.691Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;花了几天搭建了个网站，先上链接，欢迎来访：fangzh的个人博客&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo-theme-aria</title>
+    <link href="https://twj168.ga/2020/09/21/README.zh_CN/"/>
+    <id>https://twj168.ga/2020/09/21/README.zh_CN/</id>
+    <published>2020-09-21T11:59:35.000Z</published>
+    <updated>2020-09-21T12:05:21.579Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;hexo-theme-aria&quot;&gt;&lt;a href=&quot;#hexo-theme-aria&quot; class=&quot;headerlink&quot; title=&quot;hexo-theme-aria&quot;&gt;&lt;/a&gt;hexo-theme-aria&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我的网站</title>
+    <link href="https://twj168.ga/2020/09/21/01/"/>
+    <id>https://twj168.ga/2020/09/21/01/</id>
+    <published>2020-09-21T08:08:35.000Z</published>
+    <updated>2020-09-21T09:58:27.264Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;修改某个目录下的所有文件的权限，包括子目录中的文件，例子如下：&lt;/p&gt;
+&lt;h1 id=&quot;chmod-777-home-user-注：仅把-home-user目录的权限设置为rwxrwxrwx&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://twj168.ga/2020/09/21/hello-world/"/>
+    <id>https://twj168.ga/2020/09/21/hello-world/</id>
+    <published>2020-09-21T02:06:30.331Z</published>
+    <updated>2020-09-21T02:06:30.331Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
