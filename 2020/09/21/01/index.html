@@ -236,7 +236,26 @@
     </header>
     <main class="post-main" itemprop="articleBody">
       <p>修改某个目录下的所有文件的权限，包括子目录中的文件，例子如下：</p>
-<h1 id="chmod-777-home-user-注：仅把-home-user目录的权限设置为rwxrwxrwx"><a href="#chmod-777-home-user-注：仅把-home-user目录的权限设置为rwxrwxrwx" class="headerlink" title="chmod 777 /home/user 注：仅把/home/user目录的权限设置为rwxrwxrwx"></a>chmod 777 /home/user 注：仅把/home/user目录的权限设置为rwxrwxrwx</h1><h1 id="chmod-R-777-home-user-注：表示将整个-home-user目录与其中的文件和子目录的权限都设置为rwxrwxrwx"><a href="#chmod-R-777-home-user-注：表示将整个-home-user目录与其中的文件和子目录的权限都设置为rwxrwxrwx" class="headerlink" title="chmod -R 777 /home/user 注：表示将整个/home/user目录与其中的文件和子目录的权限都设置为rwxrwxrwx"></a>chmod -R 777 /home/user 注：表示将整个/home/user目录与其中的文件和子目录的权限都设置为rwxrwxrwx</h1><p>  其中，参数-R表示启动递归处理</p>
+<h1 id="chmod-777-home-user-注：仅把-home-user目录的权限设置为rwxrwxrwx"><a href="#chmod-777-home-user-注：仅把-home-user目录的权限设置为rwxrwxrwx" class="headerlink" title="chmod 777 /home/user 注：仅把/home/user目录的权限设置为rwxrwxrwx"></a>chmod 777 /home/user 注：仅把/home/user目录的权限设置为rwxrwxrwx</h1><h1 id="chmod-R-777-home-user-注：表示将整个-home-user目录与其中的文件和子目录的权限都设置为rwxrwxrwx"><a href="#chmod-R-777-home-user-注：表示将整个-home-user目录与其中的文件和子目录的权限都设置为rwxrwxrwx" class="headerlink" title="chmod -R 777 /home/user 注：表示将整个/home/user目录与其中的文件和子目录的权限都设置为rwxrwxrwx"></a>chmod -R 777 /home/user 注：表示将整个/home/user目录与其中的文件和子目录的权限都设置为rwxrwxrwx</h1><p>  其中，参数-R表示启动递归处理<br>  服务操作<br>service #### start/restart/stop</p>
+<p>软件安装管理<br>rpm -q    查询<br>rpm -a    全部<br>rpm -e    卸载    –nodeps    强制卸载<br>rpm -ivh    安装</p>
+<p>lsblk    查看挂载<br>MountPoint    挂载点<br>umount    解除挂载<br>mount    挂载</p>
+<p>图形化界面<br>init 5</p>
+<p>计划任务<br>cron/crontab<br>-l :list    列出任务<br>-e :edit    编辑<br>计划任务的规则，以行为单位，一行则为一个计划：<br>分 时 日 月 周 需要执行的命令<br>0 0 * * * reboot    #每天0点0分重启<br>分：0<del>59<br>时：0</del>23<br>日：1<del>31<br>月：1</del>12<br>周：0~6，0为星期天<br>-：连续期间<br>1、每月 1、10、22、号4:45重启nerwork服务<br>45 4 1,10,22 * * service network restart<br>2、每周 六 日1:10重启<br>10 1 * * 6,0 service nerwork restart<br>3、每天18:00至23:00之间每隔30分钟重启nerwork服务<br>*/30 18-23 * * * service nerwork restart<br>4、每隔两天的上午8点到11点第3和第15分钟执行一次重启<br>33,15 8-11 */2 * * reboot</p>
+<p>每5秒往root家目录中的RT.TXT输入当前目录，使用追加<br>*/1 * * * * ls &gt;&gt;/root/RT.txt</p>
+<p>白名单权限配置文件<br>/etc/cron.allow<br>黑名单<br>/etc/cron.deny</p>
+<p>Owner 文件所有者</p>
+<p>读 r 4<br>写 w 2<br>执行 x 1<br>0 —<br>1 –x<br>2 -w-<br>3 -wx<br>4 r–<br>5 r-x<br>6 rw-<br>7 rwx</p>
+<p>chown    修改文档所属用户<br>chgrp    修改文档所属用户组     chgrp -R username:groupname ####<br>sudo权限配置文件，使用visudo命令配置<br>/etc/sudoers</p>
+<p>查看网络连接信息<br>netstat -tnlp<br>netstat -an</p>
+<p>查找当前主机与目标主机之间的所有网关<br>traceroute（需要安装开发工具）</p>
+<p>查看网关<br>arp -a</p>
+<p>shell</p>
+<p>变量中要用反引号引用命令<br>da=`datr +’%F %T’</p>
+<p>只读变量<br>readonly ##</p>
+<p>提示用户输入<br>reap -p 提示信息 变量</p>
+<p>mysql 安装<br>yum install mysql_servcie</p>
+<p>初始化<br>service mysqld start<br>查看端口 3306<br>mysql_secure_installation</p>
+<p>进入mysql<br>mysql -u用户名 -p密码</p>
 
     </main>
     <footer class="post-footer">
