@@ -236,7 +236,7 @@
     </header>
     <main class="post-main" itemprop="articleBody">
       <p>花了几天搭建了个网站，先上链接，欢迎来访：fangzh的个人博客</p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029?biz_id=102&amp;utm_term=hexo&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-82729029&amp;spm=1018.2118.3001.4187">https://blog.csdn.net/sinat_37781304/article/details/82729029?biz_id=102&amp;utm_term=hexo&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-82729029&amp;spm=1018.2118.3001.4187</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029?biz_id=102&utm_term=hexo&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-82729029&spm=1018.2118.3001.4187">原文</a></p>
 <p>现在市面上的博客很多，如CSDN，博客园，简书等平台，可以直接在上面发表，用户交互做的好，写的文章百度也能搜索的到。缺点是比较不自由，会受到平台的各种限制和恶心的广告。</p>
 <p>而自己购买域名和服务器，搭建博客的成本实在是太高了，不光是说这些购买成本，单单是花力气去自己搭这么一个网站，还要定期的维护它，对于我们大多数人来说，实在是没有这样的精力和时间。</p>
 <p>那么就有第三种选择，直接在github page平台上托管我们的博客。这样就可以安心的来写作，又不需要定期维护，而且hexo作为一个快速简洁的博客框架，用它来搭建博客真的非常容易。</p>
@@ -250,25 +250,32 @@
 </ol>
 <p>windows：到git官网上下载,Download git,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git。</p>
 <p>linux：对linux来说实在是太简单了，因为最早的git就是在linux上编写的，只需要一行代码</p>
-<p>sudo apt-get install git<br>1<br>安装好后，用git –version 来查看一下版本</p>
+<p>sudo apt-get install git</p>
+<p>安装好后，用git –version 来查看一下版本</p>
 <ol start="2">
 <li>安装nodejs<br>Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具。</li>
 </ol>
 <p>windows：nodejs选择LTS版本就行了。</p>
 <p>linux：</p>
-<p>sudo apt-get install nodejs<br>sudo apt-get install npm<br>1<br>2<br>安装完后，打开命令行</p>
-<p>node -v<br>npm -v<br>1<br>2<br>检查一下有没有安装成功</p>
+<p>sudo apt-get install nodejs<br>sudo apt-get install npm</p>
+<p>安装完后，打开命令行</p>
+<p>node -v<br>npm -v</p>
+<p>检查一下有没有安装成功</p>
 <p>顺便说一下，windows在git安装完后，就可以直接使用git bash来敲命令行了，不用自带的cmd，cmd有点难用。</p>
 <ol start="3">
 <li>安装hexo<br>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后cd到这个文件夹下（或者在这个文件夹下直接右键git bash打开）。</li>
 </ol>
 <p>输入命令</p>
-<p>npm install -g hexo-cli<br>1<br>依旧用hexo -v查看一下版本</p>
+<p>npm install -g hexo-cli</p>
+<p>依旧用hexo -v查看一下版本</p>
 <p>至此就全部安装完了。</p>
 <p>接下来初始化一下hexo</p>
-<p>hexo init myblog<br>1<br>这个myblog可以自己取什么名字都行，然后</p>
-<p>cd myblog //进入这个myblog文件夹<br>npm install<br>1<br>2<br>新建完成后，指定文件夹目录下有：</p>
-<p>node_modules: 依赖包<br>public：存放生成的页面<br>scaffolds：生成文章的一些模板<br>source：用来存放你的文章<br>themes：主题<br>** _config.yml: 博客的配置文件**<br>hexo g<br>hexo server<br>1<br>2<br>打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。</p>
+<p>hexo init myblog</p>
+<p>这个myblog可以自己取什么名字都行，然后</p>
+<p>cd myblog //进入这个myblog文件夹<br>npm install</p>
+<p>新建完成后，指定文件夹目录下有：</p>
+<p>node_modules: 依赖包<br>public：存放生成的页面<br>scaffolds：生成文章的一些模板<br>source：用来存放你的文章<br>themes：主题<br>** _config.yml: 博客的配置文件**<br>hexo g<br>hexo server</p>
+<p>打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。</p>
 <p>大概长这样：</p>
 <p>使用ctrl+c可以把服务关掉。</p>
 <ol start="4">
@@ -280,17 +287,26 @@
 <ol start="5">
 <li>生成SSH添加到GitHub<br>回到你的git bash中，</li>
 </ol>
-<p>git config –global user.name “yourname”<br>git config –global user.email “youremail”<br>1<br>2<br>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
+<p>git config –global user.name “yourname”<br>git config –global user.email “youremail”</p>
+<p>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
 <p>可以用以下两条，检查一下你有没有输对</p>
-<p>git config user.name<br>git config user.email<br>1<br>2<br>然后创建SSH,一路回车</p>
-<p>ssh-keygen -t rsa -C “youremail”<br>1<br>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。</p>
+<p>git config user.name<br>git config user.email</p>
+<p>然后创建SSH,一路回车</p>
+<p>ssh-keygen -t rsa -C “youremail”</p>
+<p>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。</p>
 <p>ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
 <p>而后在GitHub的setting中，找到SSH keys的设置选项，点击New SSH key<br>把你的id_rsa.pub里面的信息复制进去。</p>
 <p>在gitbash中，查看是否成功</p>
-<p>ssh -T <a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#x6f;&#109;</a><br>1<br>6. 将hexo部署到GitHub<br>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
-<p>deploy:<br>  type: git<br>  repo: <a target="_blank" rel="noopener" href="https://github.com/YourgithubName/YourgithubName.github.io.git">https://github.com/YourgithubName/YourgithubName.github.io.git</a><br>  branch: master<br>1<br>2<br>3<br>4<br>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。</p>
-<p>npm install hexo-deployer-git –save<br>1<br>然后</p>
-<p>hexo clean<br>hexo generate<br>hexo deploy<br>1<br>2<br>3<br>其中 hexo clean清除了你之前生成的东西，也可以不加。<br>hexo generate 顾名思义，生成静态文章，可以用 hexo g缩写<br>hexo deploy 部署文章，可以用hexo d缩写</p>
+<p>ssh -T <a href="mailto:&#103;&#105;&#116;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#x6f;&#109;">&#103;&#105;&#116;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#x6f;&#109;</a></p>
+<ol start="6">
+<li>将hexo部署到GitHub<br>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</li>
+</ol>
+<p>deploy:<br>  type: git<br>  repo: <a target="_blank" rel="noopener" href="https://github.com/YourgithubName/YourgithubName.github.io.git">https://github.com/YourgithubName/YourgithubName.github.io.git</a><br>  branch: master</p>
+<p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。</p>
+<p>npm install hexo-deployer-git –save</p>
+<p>然后</p>
+<p>hexo clean<br>hexo generate<br>hexo deploy</p>
+<p>其中 hexo clean清除了你之前生成的东西，也可以不加。<br>hexo generate 顾名思义，生成静态文章，可以用 hexo g缩写<br>hexo deploy 部署文章，可以用hexo d缩写</p>
 <p>注意deploy时可能要你输入username和password。</p>
 <p>得到下图就说明部署成功了，过一会儿就可以在<a target="_blank" rel="noopener" href="http://yourname.github.io/">http://yourname.github.io</a> 这个网站看到你的博客了！！</p>
 <ol start="7">
@@ -303,10 +319,13 @@
 <p>登录GitHub，进入之前创建的仓库，点击settings，设置Custom domain，输入你的域名fangzh.top</p>
 <p>然后在你的博客文件source中创建一个名为CNAME文件，不要后缀。写上你的域名。</p>
 <p>最后，在gitbash中，输入</p>
-<p>hexo clean<br>hexo g<br>hexo d<br>1<br>2<br>3<br>过不了多久，再打开你的浏览器，输入你自己的域名，就可以看到搭建的网站啦！</p>
+<p>hexo clean<br>hexo g<br>hexo d</p>
+<p>过不了多久，再打开你的浏览器，输入你自己的域名，就可以看到搭建的网站啦！</p>
 <p>接下来你就可以正式开始写文章了。</p>
-<p>hexo new newpapername<br>1<br>然后在source/_post中打开markdown文件，就可以开始编辑了。当你写完的时候，再</p>
-<p>hexo clean<br>hexo g<br>hexo d<br>1<br>2<br>3<br>就可以看到更新了。</p>
+<p>hexo new newpapername</p>
+<p>然后在source/_post中打开markdown文件，就可以开始编辑了。当你写完的时候，再</p>
+<p>hexo clean<br>hexo g<br>hexo d</p>
+<p>就可以看到更新了。</p>
 <p>第二部分<br>hexo的基本配置，更换主题，实现多终端工作，以及在coding page部署实现国内外分流。</p>
 <ol>
 <li>hexo基本配置<br>在文件根目录下的_config.yml，就是整个hexo框架的配置文件了。可以在里面修改大部分的配置。详细可参考官方的配置描述。</li>
@@ -319,19 +338,20 @@
 <p>参数    结果<br>:year/:month/:day/:title/    2013/07/14/hello-world<br>:year-:month-:day-:title.html    2013-07-14-hello-world.html<br>:category/:title    foo/bar/hello-world<br>再往下翻，中间这些都默认就好了。</p>
 <p>theme: landscape</p>
 <h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  repo: <repository url><br>  branch: [branch]</p>
-<p>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>theme就是选择什么主题，也就是在theme这个文件夹下，在官网上有很多个主题，默认给你安装的是lanscape这个主题。当你需要更换主题时，在官网上下载，把主题的文件放在theme文件夹下，再修改这个参数就可以了。</p>
+<p>theme就是选择什么主题，也就是在theme这个文件夹下，在官网上有很多个主题，默认给你安装的是lanscape这个主题。当你需要更换主题时，在官网上下载，把主题的文件放在theme文件夹下，再修改这个参数就可以了。</p>
 <p>接下来这个deploy就是网站的部署的，repo就是仓库(Repository)的简写。branch选择仓库的哪个分支。这个在之前进行github page部署的时候已经修改过了，不再赘述。而这个在后面进行双平台部署的时候会再次用到。</p>
 <p>Front-matter<br>Front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量，举例来说：</p>
 <p>title: Hello World<br>date: 2013/7/13 20:46:25</p>
 <hr>
-<p>1<br>2<br>3<br>下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
+<p>下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
 <p>参数    描述<br>layout    布局<br>title    标题<br>date    建立日期<br>updated    更新日期<br>comments    开启文章的评论功能<br>tags    标签（不适用于分页）<br>categories    分类（不适用于分页）<br>permalink    覆盖文章网址<br>其中，分类和标签需要区别一下，分类具有顺序性和层次性，也就是说 Foo, Bar 不等于 Bar, Foo；而标签没有顺序和层次。</p>
 <p>categories:</p>
 <ul>
 <li>Diary<br>tags:</li>
 <li>PS3</li>
-<li>Games<br>1<br>2<br>3<br>4<br>5<br>layout（布局）<br>当你每一次使用代码</li>
+<li>Games</li>
 </ul>
+<p>layout（布局）<br>当你每一次使用代码</p>
 <p>hexo new paper<br>1<br>它其实默认使用的是post这个布局，也就是在source文件夹下的_post里面。</p>
 <p>Hexo 有三种默认布局：post、page 和 draft，它们分别对应不同的路径，而您自定义的其他布局和 post 相同，都将储存到 source/_posts 文件夹。</p>
 <p>布局    路径<br>post    source/_posts<br>page    source<br>draft    source/_drafts<br>而new这个命令其实是：</p>
@@ -377,8 +397,9 @@
 <p>npm i hexo-generator-feed<br>1<br>而后在你整个项目的_config.yml中找到Extensions，添加：</p>
 <h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins-https-hexo-io-plugins"><a href="#Plugins-https-hexo-io-plugins" class="headerlink" title="Plugins: https://hexo.io/plugins/"></a>Plugins: <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></h2><p>#RSS订阅<br>plugin:</p>
 <ul>
-<li>hexo-generator-feed<br>#Feed Atom<br>feed:<br>type: atom<br>path: atom.xml<br>limit: 20<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>这个时候你的RSS链接就是 域名/atom.xml了。</li>
+<li>hexo-generator-feed<br>#Feed Atom<br>feed:<br>type: atom<br>path: atom.xml<br>limit: 20</li>
 </ul>
+<p>这个时候你的RSS链接就是 域名/atom.xml了。</p>
 <p>所以，在主题配置文件中的这个social links，开启RSS的页面功能，这样你网站上就有那个像wifi一样符号的RSS logo了，注意空格。</p>
 <p>rss: /atom.xml<br>1<br>4. 如何关注RSS？</p>
 <p>首先，你需要一个RSS阅读器，在这里我推荐inoreader，宇宙第一RSS阅读器，而且中文支持的挺好。不过它没有PC端的程序，只有网页版，chrome上有插件。在官网上用google账号或者自己注册账号登录，就可以开始你的关注之旅了。</p>
@@ -388,7 +409,8 @@
 <p>在IOS端，没用过，好像是reader 3可以支持inoreader账户，还有个readon也不错，可以去试试。</p>
 <p>widgets(侧边栏)<br>侧边栏的小标签，如果你想自己增加一个，比如我增加了一个联系方式，那么我把communication写在上面，在zh-CN.yml中的sidebar，添加communication: ‘中文’。</p>
 <p>然后在hueman/layout/widget中添加一个communicaiton.ejs，填入模板：</p>
-<p>&lt;% if (site.posts.length) { %&gt;<br>    <div class="widget-wrap widget-list"><br>        <h3 class="widget-title">&lt;%= __(‘sidebar.communiation’) %&gt;</h3><br>        <div class="widget"><br>            <!--这里添加你要写的内容--><br>        </div><br>    </div><br>&lt;% } %&gt;<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>search(搜索框)<br>默认搜索框是不能够用的，</p>
+<p>&lt;% if (site.posts.length) { %&gt;<br>    <div class="widget-wrap widget-list"><br>        <h3 class="widget-title">&lt;%= __(‘sidebar.communiation’) %&gt;</h3><br>        <div class="widget"><br>            <!--这里添加你要写的内容--><br>        </div><br>    </div><br>&lt;% } %&gt;</p>
+<p>search(搜索框)<br>默认搜索框是不能够用的，</p>
 <p>you need to install hexo-generator-json-content before using Insight Search</p>
 <p>它已经告诉你了，如果想要使用，就安装这个插件。</p>
 <p>comment(评论系统)<br>这里的多数都是国外的，基本用不了。这个valine好像不错，还能统计文章阅读量，可以自己试一试，链接。</p>
@@ -404,23 +426,38 @@
 <p>上传分支<br>首先，先在github上新建一个hexo分支，如图：</p>
 <p>然后在这个仓库的settings中，选择默认分支为hexo分支（这样每次同步的时候就不用指定分支，比较方便）。</p>
 <p>然后在本地的任意目录下，打开git bash，</p>
-<p>git clone <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;">&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;</a>:ZJUFangzh/ZJUFangzh.github.io.git<br>1<br>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p>
+<p>git clone <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#109;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#109;</a>:ZJUFangzh/ZJUFangzh.github.io.git<br>1<br>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p>
 <p>接下来在克隆到本地的ZJUFangzh.github.io中，把除了.git 文件夹外的所有文件都删掉</p>
 <p>把之前我们写的博客源文件全部复制过来，除了.deploy_git。这里应该说一句，复制过来的源文件应该有一个.gitignore，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p>
-<p>.DS_Store<br>Thumbs.db<br>db.json<br>*.log<br>node_modules/<br>public/<br>.deploy*/<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>注意，如果你之前克隆过theme中的主题文件，那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>
+<p>.DS_Store<br>Thumbs.db<br>db.json<br>*.log<br>node_modules/<br>public/<br>.deploy*/</p>
+<p>注意，如果你之前克隆过theme中的主题文件，那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>
 <p>而后</p>
-<p>git add .<br>git commit –m “add branch”<br>git push<br>1<br>2<br>3<br>这样就上传完了，可以去你的github上看一看hexo分支有没有上传上去，其中node_modules、public、db.json已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p>
+<p>git add .<br>git commit –m “add branch”<br>git push </p>
+<p>这样就上传完了，可以去你的github上看一看hexo分支有没有上传上去，其中node_modules、public、db.json已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p>
 <p>这样就上传完了。</p>
 <p>更换电脑操作<br>一样的，跟之前的环境搭建一样，</p>
-<p>安装git<br>sudo apt-get install git<br>1<br>设置git全局邮箱和用户名<br>git config –global user.name “yourgithubname”<br>git config –global user.email “yourgithubemail”<br>1<br>2<br>设置ssh key<br>ssh-keygen -t rsa -C “youremail”<br>#生成后填到github和coding上（有coding平台的话）<br>#验证是否成功<br>ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;">&#103;&#x69;&#x74;&#x40;&#103;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;</a><br>ssh -T <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#x69;&#x74;&#x2e;&#99;&#x6f;&#100;&#x69;&#110;&#103;&#x2e;&#x6e;&#101;&#x74;">&#103;&#105;&#x74;&#64;&#103;&#x69;&#x74;&#x2e;&#99;&#x6f;&#100;&#x69;&#110;&#103;&#x2e;&#x6e;&#101;&#x74;</a> #(有coding平台的话)<br>1<br>2<br>3<br>4<br>5<br>安装nodejs<br>sudo apt-get install nodejs<br>sudo apt-get install npm<br>1<br>2<br>安装hexo<br>sudo npm install hexo-cli -g<br>1<br>但是已经不需要初始化了，</p>
+<p>安装git<br>sudo apt-get install git</p>
+<p>设置git全局邮箱和用户名<br>git config –global user.name “yourgithubname”<br>git config –global user.email “yourgithubemail”</p>
+<p>设置ssh key<br>ssh-keygen -t rsa -C “youremail”<br>#生成后填到github和coding上（有coding平台的话）<br>#验证是否成功<br>ssh -T <a href="mailto:&#103;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#111;&#x6d;">&#103;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#111;&#x6d;</a><br>ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#x2e;&#x63;&#111;&#100;&#x69;&#110;&#103;&#x2e;&#x6e;&#x65;&#x74;">&#x67;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#x2e;&#x63;&#111;&#100;&#x69;&#110;&#103;&#x2e;&#x6e;&#x65;&#x74;</a> #(有coding平台的话)</p>
+<p>安装nodejs<br>sudo apt-get install nodejs<br>sudo apt-get install npm</p>
+<p>安装hexo<br>sudo npm install hexo-cli -g</p>
+<p>但是已经不需要初始化了，</p>
 <p>直接在任意文件夹下，</p>
-<p>git clone git@………………<br>1<br>然后进入克隆到的文件夹：</p>
-<p>cd xxx.github.io<br>npm install<br>npm install hexo-deployer-git –save<br>1<br>2<br>3<br>生成，部署：</p>
-<p>hexo g<br>hexo d<br>1<br>2<br>然后就可以开始写你的新博客了</p>
-<p>hexo new newpage<br>1<br>Tips:</p>
-<p>不要忘了，每次写完最好都把源文件上传一下<br>git add .<br>git commit –m “xxxx”<br>git push<br>1<br>2<br>3<br>如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了<br>git pull<br>1<br>4. coding page上部署实现国内外分流<br>之前我们已经把hexo托管在github了，但是github是国外的，而且百度的爬虫是不能够爬取github的，所以如果你希望你做的博客能够在百度引擎上被收录，而且想要更快的访问，那么可以在国内的coding page做一个托管，这样在国内访问就是coding page，国外就走github page。</p>
-<ol>
-<li>申请coding账户，新建项目</li>
+<p>git clone git@………………</p>
+<p>然后进入克隆到的文件夹：</p>
+<p>cd xxx.github.io<br>npm install<br>npm install hexo-deployer-git –save</p>
+<p>生成，部署：</p>
+<p>hexo g<br>hexo d</p>
+<p>然后就可以开始写你的新博客了</p>
+<p>hexo new newpage</p>
+<p>Tips:</p>
+<p>不要忘了，每次写完最好都把源文件上传一下<br>git add .<br>git commit –m “xxxx”<br>git push </p>
+<p>如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了<br>git pull</p>
+<ol start="4">
+<li><p>coding page上部署实现国内外分流<br>之前我们已经把hexo托管在github了，但是github是国外的，而且百度的爬虫是不能够爬取github的，所以如果你希望你做的博客能够在百度引擎上被收录，而且想要更快的访问，那么可以在国内的coding page做一个托管，这样在国内访问就是coding page，国外就走github page。</p>
+</li>
+<li><p>申请coding账户，新建项目</p>
+</li>
 </ol>
 <p>先申请一个账户，然后创建新的项目，这一步项目名称应该是随意的。</p>
 <ol start="2">
@@ -428,12 +465,20 @@
 </ol>
 <p>这一步跟github一样。</p>
 <p>添加后，检查一下是不是添加成功</p>
-<p>ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#x69;&#116;&#46;&#x63;&#111;&#x64;&#105;&#110;&#103;&#x2e;&#x6e;&#101;&#x74;">&#103;&#x69;&#116;&#64;&#103;&#x69;&#116;&#46;&#x63;&#111;&#x64;&#105;&#110;&#103;&#x2e;&#x6e;&#101;&#x74;</a><br>1<br>3. 修改_config.yml</p>
+<p>ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#105;&#116;&#x2e;&#x63;&#111;&#x64;&#105;&#x6e;&#x67;&#46;&#x6e;&#101;&#116;">&#x67;&#105;&#x74;&#64;&#103;&#105;&#116;&#x2e;&#x63;&#111;&#x64;&#105;&#x6e;&#x67;&#46;&#x6e;&#101;&#116;</a></p>
+<ol start="3">
+<li>修改_config.yml</li>
+</ol>
 <p>hexo官方文档是这样的：</p>
-<p>deploy:<br>  type: git<br>  message: [message]<br>  repo:<br>    github: <repository url>,[branch]<br>    coding: <repository url>,[branch]<br>1<br>2<br>3<br>4<br>5<br>6<br>那么，我们只需要：</p>
-<p>deploy:<br>  type: git<br>  repo:<br>    coding: <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#x2e;&#x63;&#111;&#100;&#105;&#110;&#x67;&#46;&#x6e;&#x65;&#116;">&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#x2e;&#x63;&#111;&#100;&#105;&#110;&#x67;&#46;&#x6e;&#x65;&#116;</a>:ZJUFangzh/ZJUFangzh.git,master<br>    github: <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;</a>:ZJUFangzh/ZJUFangzh.github.io.git,master<br>1<br>2<br>3<br>4<br>5<br>4. 部署</p>
+<p>deploy:<br>  type: git<br>  message: [message]<br>  repo:<br>    github: <repository url>,[branch]<br>    coding: <repository url>,[branch] </p>
+<p>那么，我们只需要：</p>
+<p>deploy:<br>  type: git<br>  repo:<br>    coding: <a href="mailto:&#103;&#105;&#116;&#64;&#103;&#x69;&#116;&#x2e;&#99;&#111;&#x64;&#105;&#x6e;&#103;&#x2e;&#110;&#x65;&#x74;">&#103;&#105;&#116;&#64;&#103;&#x69;&#116;&#x2e;&#99;&#111;&#x64;&#105;&#x6e;&#103;&#x2e;&#110;&#x65;&#x74;</a>:ZJUFangzh/ZJUFangzh.git,master<br>    github: <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#x6d;">&#103;&#x69;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#x6d;</a>:ZJUFangzh/ZJUFangzh.github.io.git,master</p>
+<ol start="4">
+<li>部署</li>
+</ol>
 <p>保存一下，直接</p>
-<p>hexo g<br>hexo d<br>1<br>2<br>这样就可以在coding的项目上看到你部署的文件了。</p>
+<p>hexo g<br>hexo d</p>
+<p>这样就可以在coding的项目上看到你部署的文件了。</p>
 <ol start="5">
 <li>开启coding pages服务，绑定域名</li>
 </ol>
@@ -449,16 +494,12 @@
 <p>这里：</p>
 <p>只要你在页面上添加一行文字，写Hosted by Coding Pages，然后点下面的小勾勾，两个工作日内它就会审核通过了。</p>
 <p>Hosted by <a target="_blank" rel="noopener" href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
-1
-我的选择是把这一行代码放在主题文件夹/layout/common/footer.ejs里面，也就是本来在页面中看到的页脚部分。
 
-
-
+<p>我的选择是把这一行代码放在主题文件夹/layout/common/footer.ejs里面，也就是本来在页面中看到的页脚部分。</p>
 <p>当然，为了统一，我又在后面加上了and Github哈哈，可以不加。</p>
 <p><span>Hosted by <a target="_blank" rel="noopener" href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></span> and <span><a target="_blank" rel="noopener" href="https://github.com" style="font-weight: bold">Github</a></span></p>
-1
-这是最终加上去的代码。
 
+<p>这是最终加上去的代码。</p>
 <p>第三部分<br>hexo添加各种功能，包括搜索的SEO，阅读量统计，访问量统计和评论系统等。</p>
 <p>本文参考了: visugar.com这里面说的很详细了。</p>
 <ol>
@@ -477,7 +518,8 @@
 <li>提交链接</li>
 </ol>
 <p>我们需要使用npm自动生成网站的sitemap，然后将生成的sitemap提交到百度和其他搜索引擎</p>
-<p>npm install hexo-generator-sitemap –save<br>npm install hexo-generator-baidu-sitemap –save<br>1<br>2<br>这时候你需要在你的根目录下_config.xml中看看url有没有改成你自己的：</p>
+<p>npm install hexo-generator-sitemap –save<br>npm install hexo-generator-baidu-sitemap –save</p>
+<p>这时候你需要在你的根目录下_config.xml中看看url有没有改成你自己的：</p>
 <p>重新部署后，就可以在public文件夹下看到生成的sitemap.xml和baidusitemap.xml了。</p>
 <p>然后就可以向百度提交你的站点地图了。</p>
 <p>这里建议使用自动提交。</p>
@@ -494,7 +536,8 @@
 </ol>
 <p>来比力官网，注册好后，点击管理页面，在代码管理中找到安装代码：</p>
 <p>获取安装代码后，在主题的comment下新建一个文件放入刚刚那段代码，再找到article文件，找到如下代码，若没有则直接在footer后面添加即可。livebe即为刚刚所创文件名称。</p>
-<p>&lt;%- partial(‘comment/livebe’) %&gt;<br>1<br>然后可以自己设置一些东西：</p>
+<p>&lt;%- partial(‘comment/livebe’) %&gt;</p>
+<p>然后可以自己设置一些东西：</p>
 <p>还可以设置评论提醒，这样别人评论你的时候就可以及时知道了。</p>
 <ol start="3">
 <li>添加百度统计<br>百度统计可以在后台上看到你网站的访问数，浏览量，浏览链接分布等很重要的信息。所以添加百度统计能更有效的让你掌握你的网站情况。</li>
@@ -506,7 +549,8 @@
 </ol>
 <p>在存储中创建Class，命名为Counter,</p>
 <p>然后在设置页面看到你的应用Key，在主题的配置文件中：</p>
-<p>leancloud_visitors:<br>  enable: true<br>  app_id: 你的id<br>  app_key: 你的key<br>1<br>2<br>3<br>4<br>在article.ejs中适当的位置添加如下，这要看你让文章的阅读量统计显示在哪个地方了，</p>
+<p>leancloud_visitors:<br>  enable: true<br>  app_id: 你的id<br>  app_key: 你的key</p>
+<p>在article.ejs中适当的位置添加如下，这要看你让文章的阅读量统计显示在哪个地方了，</p>
 <p>阅读数量:<span id="<%= url_for(post.path) %>" class="leancloud_visitors" data-flag-title="<%- post.title %>"></span>次<br>1<br>然后在footer.ejs的最后，添加：</p>
 <script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
 <script>
@@ -548,15 +592,16 @@
         showTime(Counter);
     });
 </script>
-<p>1<br>2<br>22<br>23</p>
-<p>36<br>37<br>38<br>39<br>40<br>重新部署后就可以了。</p>
+
+<p>重新部署后就可以了。</p>
 <ol start="5">
 <li>引入不蒜子访问量和访问人次统计<br>不蒜子的添加非常非常方便，不蒜子</li>
 </ol>
 <p>在footer.ejs中的合适位置，看你要显示在哪个地方，添加：</p>
 <!--这一段是不蒜子的访问量统计代码-->
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<p><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次 &nbsp;   </span><br><span id="busuanzi_container_site_uv">访客数<span id="busuanzi_value_site_uv"></span>人次</span><br>1<br>2<br>3<br>4<br>就可以了。</p>
+<p><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次 &nbsp;   </span><br><span id="busuanzi_container_site_uv">访客数<span id="busuanzi_value_site_uv"></span>人次</span></p>
+<p>就可以了。</p>
 <p>总结<br>到这里就基本做完了。其实都是参考别的博主的设置的，不一定仅限于hueman主题，其他主题的设置也是大体相同的，所以如果你希望设置别的主题，那么仔细看一下这个主题的代码结构，也能够把上边的功能添加进去。</p>
 <p>多看看别的博主的那些功能，如果有你能找到自己喜欢的功能，那么好好发动搜索技能，很快就能找到怎么做了。加油吧！</p>
 
