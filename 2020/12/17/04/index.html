@@ -157,7 +157,7 @@
     </script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>Hello World | 我就是那个基 - 祝你健康</title>
+    <title>Ubuntu 20 LTS 手动配置Samba文件共享服务 | 我就是那个基 - 祝你健康</title>
   <meta name="generator" content="Hexo 5.2.0"></head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
     
@@ -203,7 +203,7 @@
   
   <article class="article post card" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://twj168.ga/2020/09/21/hello-world/">
+      <link itemprop="mainEntityOfPage" href="https://twj168.ga/2020/12/17/04/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
        <meta itemprop="name" content="那个基">
        <meta itemprop="description" content="我不会建网站">
@@ -214,11 +214,11 @@
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">Hello World</h1>
+      <h1 class="post-title" itemprop="name headline">Ubuntu 20 LTS 手动配置Samba文件共享服务</h1>
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2020-09-21T20:33:01+08:00">2020-09-21 20:33:01</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2020-12-17T18:40:53+08:00">2020-12-17 18:40:53</time></span>
         </span>
         
         
@@ -228,26 +228,26 @@
         <span class="post-meta-divider divider">|</span>
         
         <span class="post-comment-count">
-          <i class="far fa-comments"></i><span><a href="/2020/09/21/hello-world/#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="2020/09/21/hello-world/" itemprop="commentCount"></span></a></span>
+          <i class="far fa-comments"></i><span><a href="/2020/12/17/04/#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="2020/12/17/04/" itemprop="commentCount"></span></a></span>
         </span>
         
         
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+      <h3 id="安装Samba"><a href="#安装Samba" class="headerlink" title="安装Samba"></a>安装Samba</h3><p># 安装<br><code>demo@ubuntu:~$ sudo apt install samba -y</code><br># 防火墙通过<br><code>demo@ubuntu:~$ sudo ufw allow &#39;samba&#39;</code></p>
+<h3 id="指定共享文件夹"><a href="#指定共享文件夹" class="headerlink" title="指定共享文件夹"></a>指定共享文件夹</h3><p># 当前用户是demo，在demo的home目录下建立共享文件夹<br><code>demo@ubuntu:~$ mkdir /samba_share</code><br># samba_share文件夹的权限如下 owner|group|other<br><code>demo@ubuntu:~$ ls -l</code><br><code>total 8</code><br><code>drwxrwxr-x 2 demo demo 4096 Oct 4 06:08 samba_share</code><br><code>drwxrwxr-x 3 demo demo 4096 Oct 3 12:39 software</code></p>
+<h3 id="设置samba用户"><a href="#设置samba用户" class="headerlink" title="设置samba用户"></a>设置samba用户</h3><p># 设置一个普通用户sam，该用户不需指定目录和shell<br><code>demo@ubuntu:~$ sudo useradd sam</code><br># 设置sam的密码，输入2次确认<br><code>demo@ubuntu:~$ sudo passwd sam</code></p>
+<p># 由于没有指定sam的组，所以sam属于sam组，与用户名同名<br># 按照上面的文件夹权限，该用户只有读和执行的权限</p>
+<p># 添加samba用户，samba用于是基于系统用户，所以必须先建立系统用户才可以添加samba用户<br><code>demo@ubuntu:~$ sudo smbpasswd -a sam</code><br># 输入2次密码，可以与系统账户不一致，samba账户与系统账户没关系</p>
+<h3 id="修改samba配置"><a href="#修改samba配置" class="headerlink" title="修改samba配置"></a>修改samba配置</h3><p><code>demo@ubuntu:~$ cd /etc/samba/</code><br># 备份配置<br><code>demo@ubuntu:/etc/samba$ sudo cp smb.conf smb.conf.bak</code><br># 修改配置<br><code>demo@ubuntu:/etc/samba$ sudo vim smb.conf</code><br># 在配置最后添加共享配置</p>
+<p># 共享显示的名称<br><code>[share]</code><br># 描述，自由填写<br><code>comment = SambaShare</code><br># 共享文件夹的绝对路径<br><code>path = /home/demo/samba_share</code><br># everyone可见<br><code>public = yes</code><br># 是否可写<br><code>writable = yes</code><br># 文件权限<br><code>create mask = 0700</code><br># 文件夹权限<br><code>directory mask = 0700</code><br># 允许访问的用户，多用户用逗号隔开，添加组 ‘@+组名’<br><code>valid users = @demo, sam</code><br># 资源是否可用<br><code>available = yes</code><br># 是否可浏览<br><code>browseable = yes</code><br># 设置中文正确显示<br><code>display charset = utf-8</code><br><code>unix charset = utf-8</code><br><code>doc charset = uft-8</code></p>
+<p><code>[share]</code><br><code>comment = SambaShare</code><br><code>path = /home/demo/samba_share</code><br><code>public = yes</code><br><code>writable = yes</code><br><code>create mask = 0700</code><br><code>directory mask = 0700</code><br><code>valid users = @demo, sam</code><br><code>available = yes</code><br><code>browseable = yes</code><br><code>display charset = utf-8</code><br><code>unix charset = utf-8</code><br><code>doc charset = uft-8</code></p>
+<p># 重启服务<br><code>demo@ubuntu:~$ sudo /etc/init.d/smbd restart</code></p>
+<p>配置完毕可用Windows上使用\\IP地址来访问该共享，若弹出需要输入用户名和密码就填写刚才新建samba用户的用户名和密码。</p>
+<p>若使用sam用户只能访问不能写入，可将sam用户加入demo组</p>
+<p># 将用户sam添加到demo组<br><code>demo@ubuntu:~$ sudo usermod -g demo sam</code></p>
+<p># 设置sam用户禁止登陆shell<br><code>demo@ubuntu:~$ sudo usermod -s /usr/sbin/nologin sam</code></p>
 
     </main>
     <footer class="post-footer">
@@ -282,12 +282,10 @@
   <nav class="page-nav">
     <div class="page-nav-next page-nav-item">
       
-      <a href="/2020/09/21/03/" rel="next" title="使用 Hexo 搭建 GitHub Page 博客(二)--使用 GitHub 分支保存 Hexo 环境和博文"><i class="fas fa-angle-left"></i><span class="nav-title">使用 Hexo 搭建 GitHub Page 博客(二)--使用 GitHub 分支保存 Hexo 环境和博文</span></a>
+      <a href="/2020/09/21/hello-world/" rel="next" title="Hello World"><i class="fas fa-angle-left"></i><span class="nav-title">Hello World</span></a>
       
     </div>
     <div class="page-nav-prev page-nav-item">
-      
-      <a href="/2020/12/17/04/" rel="prev" title="Ubuntu 20 LTS 手动配置Samba文件共享服务"><span class="nav-title">Ubuntu 20 LTS 手动配置Samba文件共享服务</span><i class="fas fa-angle-right"></i></a>
       
     </div>
   </nav>
@@ -302,8 +300,8 @@
   <div id="disqus_thread" class="disqus_thread"></div>
   <script type="text/javascript">
   var disqus_config = function () {
-    this.page.url = "https://twj168.ga/2020/09/21/hello-world/";
-    this.page.identifier = "2020/09/21/hello-world/";
+    this.page.url = "https://twj168.ga/2020/12/17/04/";
+    this.page.identifier = "2020/12/17/04/";
   };
   (function() {
     var d = document, s = d.createElement("script");
@@ -386,7 +384,7 @@
     <hr>
     <div class="post-toc sidebar-item" id="toc-div">
       <div><i class="fas fa-list-ol"></i>文章目录</div>
-      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#%E5%AE%89%E8%A3%85Samba"><span class="toc-text">安装Samba</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#%E6%8C%87%E5%AE%9A%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-text">指定共享文件夹</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#%E8%AE%BE%E7%BD%AEsamba%E7%94%A8%E6%88%B7"><span class="toc-text">设置samba用户</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#%E4%BF%AE%E6%94%B9samba%E9%85%8D%E7%BD%AE"><span class="toc-text">修改samba配置</span></a></li></ol></div>
     </div>
     
     

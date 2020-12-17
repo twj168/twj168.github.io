@@ -6,7 +6,7 @@
   <link href="https://twj168.ga/atom.xml" rel="self"/>
   
   <link href="https://twj168.ga/"/>
-  <updated>2020-12-09T12:49:02.713Z</updated>
+  <updated>2020-12-17T10:47:26.606Z</updated>
   <id>https://twj168.ga/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu 20 LTS 手动配置Samba文件共享服务</title>
+    <link href="https://twj168.ga/2020/12/17/04/"/>
+    <id>https://twj168.ga/2020/12/17/04/</id>
+    <published>2020-12-17T10:40:53.000Z</published>
+    <updated>2020-12-17T10:47:26.606Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;安装Samba&quot;&gt;&lt;a href=&quot;#安装Samba&quot; class=&quot;headerlink&quot; title=&quot;安装Samba&quot;&gt;&lt;/a&gt;安装Samba&lt;/h3&gt;&lt;p&gt;# 安装&lt;br&gt;&lt;code&gt;demo@ubuntu:~$ sudo apt install</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://twj168.ga/2020/09/21/hello-world/"/>
+    <id>https://twj168.ga/2020/09/21/hello-world/</id>
+    <published>2020-09-21T12:33:01.999Z</published>
+    <updated>2020-09-21T02:06:30.331Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>使用 Hexo 搭建 GitHub Page 博客(二)--使用 GitHub 分支保存 Hexo 环境和博文</title>
@@ -64,7 +106,7 @@
     <link href="https://twj168.ga/2020/09/21/README.zh_CN/"/>
     <id>https://twj168.ga/2020/09/21/README.zh_CN/</id>
     <published>2020-09-21T11:59:35.000Z</published>
-    <updated>2020-09-21T12:05:21.579Z</updated>
+    <updated>2020-12-09T14:28:01.707Z</updated>
     
     
       
@@ -94,27 +136,6 @@
         
     <summary type="html">&lt;p&gt;修改某个目录下的所有文件的权限，包括子目录中的文件，例子如下：&lt;/p&gt;
 &lt;h1 id=&quot;chmod-777-home-user-注：仅把-home-user目录的权限设置为rwxrwxrwx&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://twj168.ga/2020/09/21/hello-world/"/>
-    <id>https://twj168.ga/2020/09/21/hello-world/</id>
-    <published>2020-09-21T02:06:30.331Z</published>
-    <updated>2020-09-21T02:06:30.331Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
         
       
     
