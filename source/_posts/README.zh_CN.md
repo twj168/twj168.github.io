@@ -11,11 +11,7 @@ hexo-theme-aria
 A Hexo theme inspired by Kalafina's song ARIA.
 ----------------------------------------------
 
-[English README](README.md)
-
 主题预览：[喵's StackHarbor](http://aria.ismyonly.one/)
-
-![屏幕截图](ARIA.png)
 
 # 捐助
 
